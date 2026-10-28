@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Escaneás sin pensar?</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f6fc;
+            color: #193653;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #15385e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            color: #d8eaff;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .principal {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px #00000010;
+        }
+
+        .icono {
+            font-size: 65px;
+            margin-bottom: 10px;
+        }
+
+        .principal h2 {
+            font-size: 32px;
+            color: #0878e8;
+            margin-bottom: 15px;
+        }
+
+        .principal p {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .aviso {
+            background: #e4f2ff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px #0000000c;
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .roja {
+            border-top: 5px solid #e52d50;
+        }
+
+        .verde {
+            border-top: 5px solid #07977b;
+        }
+
+        .violeta {
+            border-top: 5px solid #7545d5;
+        }
+
+        .roja h3 {
+            color: #e52d50;
+        }
+
+        .verde h3 {
+            color: #07977b;
+        }
+
+        .violeta h3 {
+            color: #7545d5;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        .informacion {
+            background: #e3f1ff;
+            padding: 25px;
+            border-radius: 16px;
+            margin-top: 25px;
+        }
+
+        .informacion h3 {
+            color: #07549f;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #15385e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 35px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 800px) {
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            .principal h2 {
+                font-size: 25px;
+            }
+
+            .principal {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🛡️ Seguridad Informática</h1>
+        <p>Instituto Técnico Nuestra Señora de Itatí</p>
+        <p>Proyecto: ¿Escaneás sin pensar?</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="principal">
+            <div class="icono">📱 ⚠️</div>
+
+            <h2>¡Acabás de escanear un QR desconocido!</h2>
+
+            <p>
+                Esto fue un experimento educativo de
+                <strong>Seguridad Informática</strong>.
+            </p>
+
+            <p>
+                No recolectamos ningún dato personal tuyo.
+            </p>
+
+            <div class="aviso">
+                <strong>¿Cuál es el objetivo?</strong>
+                <p>
+                    Enseñarte cómo funcionan las estafas mediante
+                    códigos QR y cómo podés protegerte.
+                </p>
+            </div>
+        </section>
+
+        <section class="tarjetas">
+
+            <article class="tarjeta roja">
+                <h3>⚠️ ¿Qué es el quishing?</h3>
+
+                <p>
+                    Es una forma de phishing que utiliza códigos QR
+                    para engañar a las personas y llevarlas a páginas
+                    peligrosas.
+                </p>
+
+                <ul>
+                    <li>Robo de contraseñas.</li>
+                    <li>Descarga de aplicaciones maliciosas.</li>
+                    <li>Pagos fraudulentos.</li>
+                    <li>Robo de datos personales.</li>
+                </ul>
+            </article>
+
+            <article class="tarjeta verde">
+                <h3>🛡️ Consejos de seguridad</h3>
+
+                <ul>
+                    <li>Revisá el enlace antes de abrirlo.</li>
+                    <li>Desconfiá de códigos pegados encima de otros.</li>
+                    <li>No creas en ofertas demasiado buenas.</li>
+                    <li>Nunca ingreses contraseñas en páginas desconocidas.</li>
+                    <li>No descargues aplicaciones sospechosas.</li>
+                    <li>Buscá la página oficial si tenés dudas.</li>
+                </ul>
+            </article>
+
+            <article class="tarjeta violeta">
+                <h3>💡 ¡Recordá siempre!</h3>
+
+                <ul>
+                    <li>No todo lo que parece gratis es real.</li>
+                    <li>Antes de escanear, pensá y verificá.</li>
+                    <li>No compartas tus datos personales.</li>
+                    <li>Tu seguridad también depende de vos.</li>
+                </ul>
+
+                <p>
+                    <strong>
+                        Un segundo de duda puede evitar un gran problema.
+                    </strong>
+                </p>
+            </article>
+
+        </section>
+
+        <section class="informacion">
+            <h3>👥 ¿Quiénes somos?</h3>
+
+            <p>
+                Somos estudiantes del Instituto Técnico Nuestra
+                Señora de Itatí. Este proyecto forma parte de la
+                Muestra Anual 2026 de Seguridad Informática.
+            </p>
+
+            <br>
+
+            <h3>📊 Resultados del proyecto</h3>
+
+            <p>
+                Al finalizar la muestra, presentaremos gráficos
+                para mostrar qué carteles recibieron más escaneos.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Instituto Técnico Nuestra Señora de Itatí</strong></p>
+        <p>Seguridad Informática · Muestra Anual 2026</p>
+        <p>Escaneá con la cabeza, no solo con la cámara. 🔐</p>
+    </footer>
+
+</body>
+</html>
